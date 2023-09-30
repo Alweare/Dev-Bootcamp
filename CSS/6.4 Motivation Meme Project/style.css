@@ -1,0 +1,21 @@
+body {
+	
+	background-color: black;
+
+}
+h1{
+	text-transform: uppercase;
+}
+.motivimage {
+	border: 5px solid white;
+	width: 100%;
+}
+
+.post {
+	width: 50%;
+	margin-left: 25%;
+	margin-top: 5%;
+	font-family: 'Libre Baskerville', serif;
+	color: white;
+	text-align: center;
+}
