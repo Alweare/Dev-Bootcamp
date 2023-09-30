@@ -1,1 +1,25 @@
 /* Write your code here: */
+h1, h2 { /*regroupement de sélécteur tant que c'est séparer par une virgule on peur 
+	mixer id et class ou même balise.*/
+	color: blueviolet; 
+}
+.box > p { /* .box est le parent du paragraphe p qui est son descendant direct 
+	a qui on donne la couleur firebrick */
+	color: firebrick;
+}
+
+.box li { /* On utilise la méthode du descendant
+	pour avoir une règle très spécifique on utilise le conteneur le plus a gauche
+	de l'élément qu'on vise ici .box est a deux niveau du li donc c'est son ancêtre. 
+	ça permet de ne cibler que cette liste spécifiquement.*/
+	color: blue;
+}
+li.done{ /*Chainé. Il ne peut y avoir qu'un seul élément et il doit être au début mais plusieur 
+	class.Pas d'espace entre les sélécteurs*/ 
+	color: seagreen;
+}
+
+ul p.done{ /*seul moyen d'utiliser 2 éléments comme règle. 
+	*/
+	font-size: 0.5rem;
+}
