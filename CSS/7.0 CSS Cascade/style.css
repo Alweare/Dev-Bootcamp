@@ -8,7 +8,9 @@
   padding: 10px;
 }
 .inner-box{
-  background-color: red;
+  background-color: red; /* sachant que toutes les div partage la class box 
+  inner-box étant la deuxième class elles sont au même niveau du coup c'est leur position qui prime
+  si on met inner-box au dessus de box alors le background ne sera pas rouge*/
 }
 p {
   color: yellow;
