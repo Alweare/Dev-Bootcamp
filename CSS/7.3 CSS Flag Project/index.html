@@ -9,9 +9,10 @@
    
     .flag{
       background-color: #ce1126;
-      width: 900px;
+      width: 900px; 
       height: 600px;
-      position: relative;
+      position: relative; /*Mettre le premier contenant en relative permet de mettre le suivant en absolute sans créer de décalage. 
+      L'héritier se place en fonction de l'ancêtre*/
     }
     .flag > div {
       background-color: #002868;
@@ -29,11 +30,16 @@
       text-align: center;
       height: 35px;
       font-size: 100px;
-      margin: 0;
 
     }
+    p {
+      margin:0; /*Si on a plusieur élément a qui on veut donner une propriété comme ici 
+      enlever les marges. La bonne pratique c'est de le mettre a tout les éléments. On retire souvent les marge car si on en met pas 
+      elles sont en automatique.*/
+      color: black; 
+    }
   
-    .flag > div > div{
+    .flag > div > div{ /*On peut aller dans l'inspecteur chrome pour récupérer les selecteur. Copy selector d'un élément donne son chemin*/
       background-color: white;
       width: 200px;
       height: 200px;
@@ -60,8 +66,8 @@ https://appbrewery.github.io/flag-of-laos/
   <div class="flag">
     <p>The Flag</p>
     <div>
-      <div style="  margin:50px 350px;">
-        <p style="margin:0;">of Laos</p>
+      <div>
+        <p>of Laos</p>
       </div>
     </div>
   </div>
