@@ -3,15 +3,40 @@ body {
   margin: 50px 50px 0 50px;
   background-color: #faf9f6;
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
   min-height: 95vh;
+}
+.logo{
+  height:50px;
+}
+.creative{
+  color: blueviolet;
 }
 .main {
   flex: 1;
+   
 }
+img{
+  height: 300px;
+  width: auto;
+}
+.card{
+  display: flex;
+  
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+p{
+ text-align: center;
+ width: 200px;
 
+}
 h1 {
-  font-size: 5rem;
+  font-size: 6rem;
 }
 
 footer {
