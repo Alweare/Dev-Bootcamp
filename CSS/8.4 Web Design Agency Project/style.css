@@ -8,10 +8,10 @@ body {
   
 }
 .logo{
-  height:50px;
+  height:60px;
 }
 .creative{
-  color: blueviolet;
+  color: midnightblue;
 }
 .main {
   flex: 1;
@@ -21,34 +21,32 @@ body {
 .tile-image{
   height: auto;
   width: 15%;
-
   position: absolute;
+  margin: 0;
   
 
 }
 .card{
   width: 45%;
-
-
+  text-align: justify;
 }
 .left{
   float: left;
-  
-  
 }
 .right{
- float: right;
-  
+ float: right; 
 }
 .card-title{
   position: relative;
-  left: 60%;
+  left: 40%;
+  font-size: 2rem;
+  margin: 0;
 }
 p {
-  width: 40%;
+  width: 60%;
   float: right;
   position: relative;
-  font-size: 1rem;
+  font-size: 1.35rem;
 
 }
  
