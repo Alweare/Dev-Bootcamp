@@ -5,6 +5,7 @@ body {
   display: flex;
   flex-direction:column;
   min-height: 95vh;
+  
 }
 .logo{
   height:50px;
@@ -14,27 +15,43 @@ body {
 }
 .main {
   flex: 1;
+
    
 }
-img{
-  height: 300px;
-  width: auto;
+.tile-image{
+  height: auto;
+  width: 15%;
+
+  position: absolute;
+  
+
 }
 .card{
-  display: flex;
-  
+  width: 45%;
+
+
 }
 .left{
   float: left;
+  
+  
 }
 .right{
-  float: right;
+ float: right;
+  
 }
-p{
- text-align: center;
- width: 200px;
+.card-title{
+  position: relative;
+  left: 60%;
+}
+p {
+  width: 40%;
+  float: right;
+  position: relative;
+  font-size: 1rem;
 
 }
+ 
 h1 {
   font-size: 6rem;
 }
@@ -42,5 +59,6 @@ h1 {
 footer {
   text-align: right;
   color: midnightblue;
+  clear: both;
 }
 
