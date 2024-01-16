@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mondrian Project</title>
-  <style>
-    /* 
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Mondrian Project</title>
+		<style>
+			.container {
+				width: 748px;
+				height: 748px;
+				display: grid;
+				grid-template-columns: 311px 369px;
+				grid-template-rows: 405px 316px;
+				gap: 9px;
+				background-color: #000;
+			}
+
+			.item1 {
+				background-color: #e72f24;
+
+			}
+
+			.item2 {
+				background-color: violet;
+				grid-column: span 2;
+
+			}
+
+			.item3 {
+				background-color: yellow;
+				width: 198px;
+				height: 20px;
+				grid-column-start: -5;
+				grid-row-start: 3;
+
+
+			}
+
+			.item4 {
+				background-color: #f0f1ec;
+				order: 9;
+			}
+
+			.item5 {
+				background-color: #f0f1ec;
+			}
+
+			.item6 {
+				background-color: #f0f1ec;
+			}
+
+			.item7 {
+				background-color: #f0f1ec;
+
+			}
+
+			.item8 {
+				background-color: #004592;
+
+
+			}
+
+			/* 
     Write your CSS here 
     Gap Colour: #000
     White: #F0F1EC
@@ -19,11 +74,21 @@
     HINT: Remember you can't change the properties of grid lines.
     But grid lines are transparent!
     */
-  </style>
-</head>
+		</style>
+	</head>
 
-<body>
-  <!-- Write your HTML here -->
-</body>
+	<body>
+		<!-- Write your HTML here -->
+		<div class="container">
+			<div class="item1"></div>
+			<div class="item2"></div>
+			<div class="item3"></div>
+			<div class="item4"></div>
+			<div class="item5"></div>
+			<div class="item6"></div>
+			<div class="item7"></div>
+			<div class="item8"></div>
+		</div>
+	</body>
 
 </html>
