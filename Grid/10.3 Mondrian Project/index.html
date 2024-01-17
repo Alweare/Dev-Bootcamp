@@ -11,52 +11,66 @@
 				height: 748px;
 				display: grid;
 				grid-template-columns: 311px 369px;
-				grid-template-rows: 405px 316px;
+				grid-template-rows: 405px 316px 20px;
+				grid-auto-flow: column;
 				gap: 9px;
 				background-color: #000;
 			}
 
 			.item1 {
 				background-color: #e72f24;
+				order: 1;
 
 			}
 
 			.item2 {
 				background-color: violet;
-				grid-column: span 2;
+				order: 2;
+				grid-column: 2 / span 2;
 
 			}
 
 			.item3 {
 				background-color: yellow;
-				width: 198px;
-				height: 20px;
-				grid-column-start: -5;
-				grid-row-start: 3;
+				order: 3;
 
 
 			}
 
 			.item4 {
 				background-color: #f0f1ec;
-				order: 9;
+				order: 4;
 			}
 
 			.item5 {
 				background-color: #f0f1ec;
+				order: 5;
+			}
+
+			.jaune {
+				background-color: #F9D01E;
+				width: 198px;
 			}
 
 			.item6 {
-				background-color: #f0f1ec;
+				background-color: #232629;
+				order: 6;
+				width: 153px;
 			}
 
 			.item7 {
 				background-color: #f0f1ec;
+				order: 7;
+				grid-column: 3;
+				height: 334px;
 
 			}
 
 			.item8 {
 				background-color: #004592;
+				border-bottom: solid #000 10px;
+				order: 8;
+				height: 130px;
 
 
 			}
@@ -84,10 +98,15 @@
 			<div class="item2"></div>
 			<div class="item3"></div>
 			<div class="item4"></div>
-			<div class="item5"></div>
-			<div class="item6"></div>
-			<div class="item7"></div>
-			<div class="item8"></div>
+			<div class="item5">
+			</div>
+			<div class="item6">
+				<div class="jaune"></div>
+			</div>
+
+			<div class="item7">
+				<div class="item8"></div>
+			</div>
 		</div>
 	</body>
 
