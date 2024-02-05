@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<script>
+
+			// const birthyear = prompt('Quelle est votre année de naissance')
+			// const year = 2022
+			// const age = year - birthyear
+
+			// if (age > 18) {
+			// 	console.log('Je te conseil de regarder Evil dead')
+
+			// } else if (age > 13 && age < 18) {
+			// 	console.log('Je te conseil de regarder Matrix')
+
+			// } else if (age <= 13) {
+			// 	console.log('Je te conseil de regarder Lilo et Stitch')
+			// }
+
+			// const A = prompt("Donner un nombre")
+			// const B = prompt("Donner un nombre")
+			// const E = A * B
+
+			// if (E > 0) {
+			// 	console.log("Positif" + '' + E)
+			// } else {
+			// 	console.log("Négatif" + '' + E)
+			// }
+			// let chiffre = prompt("Donnez un nombre entre 0 et 10")
+
+
+
+			// if (chiffre > 10 || chiffre < 0) {
+			// 	console.log("Le chiffre n'est pas compris entre 0 et 10")
+
+			// } else {
+			// 	while (chiffre >= 0) {
+			// 		console.log(chiffre)
+			// 		chiffre--
+
+			// 	}
+			// }4
+			// let guess = 8
+			// let chiffre
+
+			// while (chiffre !== guess) {
+			// 	chiffre = prompt('A quel nombre je pense ?') * 1
+			// 	if (chiffre !== guess) {
+			// 		console.log('PERDU')
+			// 	}
+
+
+
+			// }
+			// // console.log('bien joué')
+			// function canDrive (age, pays){
+
+			// }
+
+			// function getRandomInt(min, max) {
+			// 	min = Math.ceil(min);
+			// 	max = Math.floor(max);
+			// 	return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
+			// }
+			// const random = getRandomInt(0, 10)
+
+			// function IsRight(n) {
+
+			// 	const nombrerandom = random
+			// 	if (n === nombrerandom) {
+			// 		return true
+			// 	} else {
+			// 		return false
+			// 	}
+			// }
+
+			// function guess() {
+			// 	let essai = 3
+
+			// 	while (essai !== 0) {
+			// 		const nombre = prompt('Donne ton guess') * 1
+			// 		if (IsRight(nombre) === true) {
+			// 			console.log("bien joué")
+			// 			return true
+
+
+			// 		} else if (IsRight(nombre) === false) {
+			// 			console.log("Perdu, il te reste" + ' ' + essai)
+			// 			essai--
+			// 		}
+
+			// 	}
+			// 	console.log("Game Over")
+
+			// }
+
+
+			// guess()
+			function isPremier(n) {
+				if (n < 2) {
+					return false
+				}
+				const d = 2
+
+				for (let i = n - 1; i > 1; i--) {
+					if (n % i === 0) {
+						return false
+
+					}
+				}
+				return true
+
+			}
+			console.log(isPremier(2))
+			console.log(isPremier(3))
+			console.log(isPremier(4))
+			console.log(isPremier(5))
+			console.log(isPremier(6))
+			console.log(isPremier(12))
+		</script>
+	</head>
+
+	<body>
+
+	</body>
+
+</html>
