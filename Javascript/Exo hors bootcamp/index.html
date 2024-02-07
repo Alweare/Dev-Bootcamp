@@ -100,27 +100,159 @@
 
 
 			// guess()
-			function isPremier(n) {
-				if (n < 2) {
-					return false
-				}
-				const d = 2
+			// function isPremier(n) {
+			// 	if (n < 2) {
+			// 		return false
+			// 	}
+			// 	const d = 2
 
-				for (let i = n - 1; i > 1; i--) {
-					if (n % i === 0) {
-						return false
+			// 	for (let i = n - 1; i > 1; i--) {
+			// 		if (n % i === 0) {
+			// 			return false
 
+			// 		}
+			// 	}
+			// 	return true
+
+			// }
+			// console.log(isPremier(2))
+			// console.log(isPremier(3))
+			// console.log(isPremier(4))
+			// console.log(isPremier(5))
+			// console.log(isPremier(6))
+			// console.log(isPremier(12))
+
+			// function isPalindrome(word) {
+			// 	// methode reverse
+			// 	//methode split
+			// 	// méthode join
+			// 	// toUpperCase
+			// 	const reversed = word.split('').reverse().join('')
+			// 	// console.log(mot)
+			// 	// console.log(reversed)
+			// 	return word.toUpperCase() === reversed.toUpperCase()
+
+
+
+
+			// }
+
+
+			// const words = {
+			// 	kayak: true,
+			// 	SOS: true,
+			// 	Kayak: true,
+			// 	Bonjour: false,
+			// }
+
+
+			// for (let word in words) {
+
+			// 	// console.log(isPalindrome(word))
+			// 	// if (isPalindrome(word) && words[word] === true) {
+			// 	// 	console.log(word + ' est un palindrome')
+			// 	// } else {
+			// 	// 	console.error(`isPalindrome (${word}) n'est pas un palindrome`)
+			// 	// }
+
+
+			// 	// if (isPalindrome(word) !== words[word]) {
+			// 	console.log('word ' + words[word])
+			// 	console.log('Palindrome ' + isPalindrome(word))
+
+			// 	// console.error(`isPalindrome (${word}) n'est pas un palindrome`)
+
+			// 	// }
+			// }
+			// const students = [
+			// 	{
+			// 		name: 'John',
+			// 		notes: [1, 20, 18, 19, 12]
+			// 	},
+			// 	{
+			// 		name: 'Jane',
+			// 		notes: [17, 18, 20, 13, 15]
+			// 	},
+			// 	{
+			// 		name: 'Sophie',
+			// 		notes: [17, 12, 14, 15, 13]
+			// 	},
+			// 	{
+			// 		name: 'Marc',
+			// 		notes: [2, 3, 5, 8, 9]
+			// 	},
+			// 	{
+			// 		name: 'Manon',
+			// 		notes: [18, 17, 18, 19, 12]
+			// 	}
+			// ]
+
+			// const moyenne = (notes) => {
+			// 	let sum = 0
+			// 	for (let note of notes) {
+			// 		sum = sum + note
+			// 	}
+			// 	return sum / notes.length
+
+
+			// }
+			// const compareStudent = (a, b) => {
+			// 	return b.moyenne - a.moyenne
+			// }
+
+			// for (let student of students) {
+			// 	student.moyenne = moyenne(student.notes)
+			// 	student.worst = Math.min(...student.notes)
+			// 	student.best = Math.max(...student.notes)
+			// }
+			// students.sort(compareStudent)
+
+			// const formatStuden = (student) => {
+			// 	return `${student.name} avec une moyenne de ${student.moyenne} pire note ${student.worst} meilleur note ${student.best}`
+
+			// }
+
+			// console.log(`Top 3 des étudiants
+			// 1:${formatStuden(students[0])} 
+			// 2:${formatStuden(students[1])}
+			// 3:${formatStuden(students[2])}`)
+
+			const phrase = `Vous savez, moi je ne crois pas qu’il y ait de bonne ou de mauvaise situation. Moi, si je devais résumer ma vie aujourd’hui avec vous, je dirais que c’est d’abord des rencontres.`
+			const words = phrase
+				.toLowerCase()
+				.replaceAll(',', '')
+				.replaceAll('?', '')
+				.replaceAll('.', '')
+				.split(" ")
+
+			const frequencies = {}
+
+			for (let word of words) {
+				if (word !== "") {
+					if (frequencies[word]) {
+						console.log(frequencies[word])
+						frequencies[word]++
+					} else {
+						frequencies[word] = 1
 					}
+
 				}
-				return true
 
 			}
-			console.log(isPremier(2))
-			console.log(isPremier(3))
-			console.log(isPremier(4))
-			console.log(isPremier(5))
-			console.log(isPremier(6))
-			console.log(isPremier(12))
+			const frequenciesArray = []
+			for (let k in frequencies) {
+				frequenciesArray.push({
+					word: k,
+					count: frequencies[k]
+				})
+
+			}
+			frequenciesArray.sort((a, b) => b.count - a.count)
+			console.log(frequenciesArray)
+
+
+
+
 		</script>
 	</head>
 
